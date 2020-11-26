@@ -1,0 +1,87 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  background-color: $color-black;
+  // height: 24rem;
+  width: 100vw;
+  color: $color-white;
+
+  &__wrapper {
+    grid-column: center-start / center-end;
+    padding: 5rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 9rem;
+    fill: $color-white;
+    opacity: 0.72;
+    transition: all 0.42s $ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &__link {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__social {
+    &__ul {
+      display: flex;
+      list-style: none;
+    }
+
+    &__li {
+      margin-right: 4rem;
+
+      &:nth-last-of-type(1) {
+        margin-right: 0;
+      }
+    }
+
+    &__icon {
+      width: 2.5rem;
+      fill: $color-white;
+      opacity: 0.72;
+      transition: all 0.42s $ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  &__li {
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: 0.72;
+    transition: all 0.42s $ease;
+
+    &:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__copy {
+    font-weight: 500;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    opacity: 0.72;
+  }
+}

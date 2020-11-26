@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.grid {
+  width: 100vw;
+  display: grid;
+  grid-template-columns:
+    [grid-start] minmax(2rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 17rem) [col-end]
+    )
+    [center-end] minmax(2rem, 1fr) [grid-end];
+
+  @include respond(tab-port) {
+    grid-template-columns:
+      [grid-start] minmax(5rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 17rem) [col-end]
+      )
+      [center-end] minmax(5rem, 1fr) [grid-end];
+  }
+
+  @include respond(tab-land) {
+    grid-template-columns:
+      [grid-start] minmax(7rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 17rem) [col-end]
+      )
+      [center-end] minmax(7rem, 1fr) [grid-end];
+  }
+
+  @include respond(desktop) {
+    grid-template-columns:
+      [grid-start] minmax(11rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 17rem) [col-end]
+      )
+      [center-end] minmax(11rem, 1fr) [grid-end];
+  }
+
+  @include respond(big-desktop) {
+    grid-template-columns:
+      [grid-start] minmax(11rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 19rem) [col-end]
+      )
+      [center-end] minmax(11rem, 1fr) [grid-end];
+  }
+}

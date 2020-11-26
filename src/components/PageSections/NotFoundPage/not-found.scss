@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.not-found {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-black;
+
+  &__wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image-wrapper {
+    min-width: 100vw;
+    min-height: 50vh;
+    overflow: hidden;
+  }
+
+  &__img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba($color-black, 0.52) 0%,
+      rgba($color-black, 0.8) 100%
+    );
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    color: $color-white;
+    font-size: 4.72rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 5rem;
+    line-height: 1;
+  }
+}

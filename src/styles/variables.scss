@@ -1,0 +1,53 @@
+/* Colors */
+// $color-primary: #0990ff;
+// $color-primary: #21d1d4;
+// $color-primary: #11e1cc;
+// $color-primary: #2489b6;
+$color-primary: #32f4ea;
+// $color-primary-light: #68fff7;
+$color-primary-light: #5efff7;
+$color-white: #f0f0f2;
+// $color-white: #e0e0eb;
+$color-black: #0c0c0e;
+// $color-black: #161717;
+
+$font-primary: Manrope, "Helvetica Neue", "Segoe UI", Helvetica, Roboto,
+  "Open Sans", sans-serif;
+$font-secondary: Beaufort;
+
+//Cubic Bezier Easings
+$ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-2: cubic-bezier(0.23, 1, 0.32, 1);
+
+//Media Queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-only {
+    @media only screen and(max-width: 37.5em) {
+      @content;
+    } //Disappears at 600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and(min-width: 37.5em) {
+      @content;
+    } //Appears at 600px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and(min-width: 56.25em) {
+      @content;
+    } //Appears at 899ox
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and(min-width: 75em) {
+      @content;
+    } //Appears at 1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and(min-width: 112.5em) {
+      @content;
+    } ///Appears at 1800px
+  }
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Beaufort;
+  src: url(./fonts/beaufort-bold.woff2), url(./fonts/beaufort-bold.woff),
+    url(./fonts/beaufort-bold.ttf);
+  font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "BeaufortRegular";
+  src: url("./fonts/BeaufortforLOL-Regular.woff");
+}
+
+body {
+  font-size: 1.8rem;
+}

@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.navbar {
+  &__spacer {
+    height: 8rem;
+  }
+
+  height: 8rem;
+  width: 100vw;
+  background-color: $color-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 9999;
+
+  &__container {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-container {
+    grid-column: grid-start / center-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    fill: $color-primary;
+    opacity: 1;
+    height: 4.2rem;
+    width: auto;
+    margin: 0;
+
+    &__link {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../styles/variables.scss";
+
+.button {
+  position: relative;
+  display: block;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.42s $ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    color: $color-black;
+    background-color: $color-primary;
+    transition: all 0.42s $ease;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  &--black {
+    color: $color-white;
+    background-color: $color-black;
+    transition: all 0.42s $ease;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &--md {
+    font-size: 1.3rem;
+    letter-spacing: 0.24rem;
+    padding: 1.8rem 1.8rem;
+  }
+}
