@@ -6,7 +6,7 @@ import HomeGuides from "../components/PageSections/HomePage/HomeGuides";
 
 const IndexPage = () => {
   return (
-    <Page title="home">
+    <Page>
       <HomeHero />
       <HomeGuides />
     </Page>
