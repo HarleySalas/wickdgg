@@ -9,7 +9,7 @@ import "./home-hero.scss";
 const HomeHero = () => {
   const data = useStaticQuery(graphql`
     query homeHeroImg {
-      image: file(relativePath: { eq: "hero-images/hero-img.jpg" }) {
+      image: file(relativePath: { eq: "hero-images/frej.jpg" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
